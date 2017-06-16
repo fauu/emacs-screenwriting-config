@@ -1,0 +1,6 @@
+.cache
+.config
+.emacs~
+.gnupg
+.emacs.d/
+*.pdf
