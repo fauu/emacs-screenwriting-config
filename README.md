@@ -4,22 +4,17 @@ My Emacs config for screenwriting.
 
 ![screenshot](screenshots/1.png)
 
-Used packages: ``evil``, ``fountain-mode``, ``olivetti``.
+Emacs packages used: ``evil``, ``fountain-mode``, ``olivetti``.
 
 Other dependencies: ``Node.js``, ``npm``, ``Afterwriting CLI`` (pdf export).
 
-Includes a modified version of ``Courier Prime`` font – ``Courier Prime Emacs``. The modification fixes display problems with original Courier Prime I experienced in Emacs.
-
 ## Instructions
 1. Clone the repository.
-2. Install ``Courier Prime Emacs``.
-3. Install ``Afterwriting CLI``: ``npm install afterwriting -g``.
-4. Create a home directory for screenplays.
-5. Move ``.emacs`` to the new directory.
-6. Edit ``launch.sh``:
-    1. Set ``SCREENPLAYS_HOME`` to the path of your home directory for screenplays (which must contain the ``.emacs`` file).
-7. Customize ``.emacs``.
-8. Customize ``afterwriting-config.js``.
-9. Launch Emacs using ``launch.sh``.
+2. Install ``Afterwriting CLI``: ``npm install afterwriting -g``.
+3. Create a directory that will serve as a separate emacs home directory for this config.
+4. Move ``.emacs`` and ``afterwriting-config.js`` to the new directory.
+5. Edit ``launch.sh``: set the ``SCREENPLAYS_HOME`` variable to the path of the new directory.
+6. Rename ``launch.sh`` to your liking and move it to your preferred directory for executables. Use it to launch emacs.
+7. Add your customizations to ``.emacs`` and ``afterwriting-config.js``.
 
 Fountain-mode and olivetti should launch automatically upon opening a ``.fountain`` file. Saving a modified ``.fountain`` file should trigger a generation of a ``.pdf`` file for the screenplay.

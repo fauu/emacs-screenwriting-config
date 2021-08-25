@@ -12,7 +12,7 @@
 (setq
  bg-color "#FEFEFE"
  fg-color "#202226"
- font-family "Courier Prime Emacs"
+ font-family "Courier Prime"
  font-height 150
  line-width-characters 66)
 
@@ -44,10 +44,8 @@
 
 (use-package fountain-mode
   :config
-
-  (fountain-set-font-lock-decoration 2)
+  ;(fountain-set-font-lock-decoration 2)
   (set-face-attribute 'fountain-scene-heading nil :foreground "#202226" :weight 'bold)
-
   (add-to-list 'auto-mode-alist '("\\.fountain$" . fountain-mode))
   (add-hook 'fountain-mode-hook (lambda () (turn-on-olivetti-mode)))
   (defun export-to-pdf ()
