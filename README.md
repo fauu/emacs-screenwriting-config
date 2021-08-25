@@ -4,7 +4,7 @@ My Emacs config for screenwriting.
 
 ![screenshot](screenshots/1.png)
 
-Emacs packages used: ``evil``, ``fountain-mode``, ``olivetti``.
+Emacs packages used: ``evil``, ``fountain-mode``, ``olivetti``, ```hide-mode-line```.
 
 Other dependencies: ``Node.js``, ``npm``, ``Afterwriting CLI`` (pdf export).
 

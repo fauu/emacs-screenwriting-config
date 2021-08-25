@@ -39,15 +39,16 @@
 (use-package olivetti
   :config
   (setq-default
-   olivetti-hide-mode-line t
    olivetti-body-width line-width-characters))
+
+(use-package hide-mode-line)
 
 (use-package fountain-mode
   :config
-  ;(fountain-set-font-lock-decoration 2)
   (set-face-attribute 'fountain-scene-heading nil :foreground "#202226" :weight 'bold)
   (add-to-list 'auto-mode-alist '("\\.fountain$" . fountain-mode))
-  (add-hook 'fountain-mode-hook (lambda () (turn-on-olivetti-mode)))
+  (add-hook 'fountain-mode-hook #'olivetti-mode)
+  (add-hook 'fountain-mode-hook #'hide-mode-line-mode)
   (defun export-to-pdf ()
     (shell-command-to-string (format "afterwriting --config afterwriting-config.json --source %s --pdf --overwrite" buffer-file-name)))
   (add-hook 'after-save-hook #'export-to-pdf))
