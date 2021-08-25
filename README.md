@@ -8,7 +8,8 @@ Emacs packages used: ``evil``, ``fountain-mode``, ``olivetti``.
 
 Other dependencies: ``Node.js``, ``npm``, ``Afterwriting CLI`` (pdf export).
 
-## Instructions
+## Installation & Usage
+
 1. Clone the repository.
 2. Install ``Afterwriting CLI``: ``npm install afterwriting -g``.
 3. Create a directory that will serve as a separate emacs home directory for this config.
